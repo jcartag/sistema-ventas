@@ -8,6 +8,8 @@ import { DeshboardComponent } from './deshboard/deshboard.component';
 import { MediaComponent } from './media/media.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { StatisComponent } from './statis/statis.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { StatisComponent } from './statis/statis.component';
     StatisComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
